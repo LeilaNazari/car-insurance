@@ -1,0 +1,104 @@
+/*Css Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: nunitoBold, "Segoe UI", Tahoma, sans-serif;
+}
+/*Css Reset*/
+@font-face {
+  font-family: "MyFontName";
+  src: url("../fonts/nunito-sans-v11-latin-regular.woff") format("woff");
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+.parent > .head-text {
+  width: 100%;
+}
+.parent > .head-text > h1 {
+  color: rgb(28, 113, 152);
+  font-size: 50px;
+}
+.parent > .head-text > span {
+  color: rgb(31, 31, 31);
+  font-size: 18px;
+  font-weight: 600;
+}
+.parent > main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.parent > main > section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 26px;
+}
+.parent > main > section > h5 {
+    color: rgb(30 30 30);
+    font-size: 15px;
+    width: 79%;
+    font-weight: 100;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.parent > main > section > form > .form-group {
+  width: 100%;
+  height: 10vh;
+}
+.parent > main > section > form > .check-box {
+  width: 100%;
+  height: 20vh;
+  border: none;
+}
+.parent > main > section > form > .check-box .form-check {
+  padding: 10px 0;
+}
+.parent > main > section > form > .btn-box {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+}
+.parent > main > section > form > .form-group > #make {
+  border: 1px solid #c3c3c3;
+  width: 80%;
+  background: none;
+  border-radius: 5px;
+  outline: none;
+  height: 6vh;
+  color: #898989;
+}
+.parent > main > section > form > .form-group > #year {
+  border: 1px solid #c3c3c3;
+  width: 80%;
+  background: none;
+  border-radius: 5px;
+  outline: none;
+  height: 6vh;
+  color: #898989;
+}
+.parent > main > section > form > .form-group > .btn {
+  width: 80%;
+  height: 6vh;
+  background-color: rgb(28, 113, 152);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+.parent > main > aside {
+  width: 60%;
+}
+.parent > main > aside > img {
+  width: 95%;
+}
+legend {
+  font-weight: 600;
+  font-size: 19px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="head-text">
+        <h1>Car insurance calculator</h1>
+        <span>Find out how much you should be paying for car insurance</span>
+      </div>
+      <main>
+        <section>
+          <h5>
+            Enter your car model, year and type of insurance below for your car insurance cost.
+
+          </h5>
+          <form action="#" id="request-quote">
+            <div class="form-group">
+              <select class="form-control" id="make">
+                <option value="">Car model:</option>
+                <option value="1">pride</option>
+                <option value="2">optima</option>
+                <option value="3">dena</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <!-- <label for="year">Year of construction:</label> -->
+              <select class="form-control" id="year"></select>
+            </div>
+            <fieldset class="form-group check-box">
+              <div>
+                <legend>Type of insurance</legend>
+
+                <div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      simple - third party
+                    </label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="level"
+                      value="basic"
+                      checked
+                    />
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      full - Third party with body insurance
+                    </label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="level"
+                      value="complete"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div id="loading">
+              <!-- <img src="img/spinner.gif" /> -->
+            </div>
+            <div id="result"></div>
+            <div class="form-group btn-box">
+              <button type="submit" class="btn btn-raised btn-primary">
+                Computing
+              </button>
+            </div>
+          </form>
+        </section>
+        <aside>
+          <img src="images/_apimages_.jpg" alt="" />
+        </aside>
+      </main>
+    </div>
+    <script src="js/js.js"></script>
+  </body>
+</html>
