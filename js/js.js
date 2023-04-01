@@ -100,5 +100,5 @@ HTMLUI.prototype.displayError=function(error){
 const div=document.createElement('div')
 div.classList='error'
 div.innerText=error
-form.insertBefore(div,document.querySelector('.form-group'))
+form.insertBefore(div,document.querySelector('.btn-box'))
 }
